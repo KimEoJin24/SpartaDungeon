@@ -10,6 +10,7 @@
     static void GameDataSetting()
     {
         player = new Character("하늘연달", "마법사", 1, 100, 50, 10, 10, 25);
+        // +아이템 정보 세팅
     }
 
     static void DisplayGameIntro()
@@ -44,12 +45,24 @@
         Console.WriteLine($"마나: {player.Mp}");
         Console.WriteLine($"공격력: {player.Attack}");
         Console.WriteLine($"방어력: {player.Defence}");
-        Console.WriteLine($"Gold: {player.Gold}G");
+        Console.WriteLine($"Gold: {player.Gold}G\n");
+        Console.WriteLine("0. 나가기");
+
+        int input = CheckValidInput(0, 0);
+        switch (input)
+        {
+            case 0: 
+                DisplayInventory();
+                break;
+        }
     }
 
     static void DisplayInventory()
     {
         Console.Clear();
+        Console.WriteLine("인벤토리 - 장착 관리");
+        Console.WriteLine("보유 중인 아이템을 관리할 수 있습니다.");
+        Console.WriteLine("[아이템 목록]");
     }
 
     static int CheckValidInput(int min, int max)
@@ -72,7 +85,7 @@
 
 public class Character
 {
-    public string Name { get;  }
+    public string Name { get; }
     public string Job { get; }
     public int Level { get; }
     public int Hp { get; }
@@ -81,7 +94,7 @@ public class Character
     public int Defence { get; }
     public int Gold { get; }
 
-    public Character (string name, string job, int level, int hp, int mp, int attack, int defence, int gold)
+    public Character(string name, string job, int level, int hp, int mp, int attack, int defence, int gold)
     {
         Name = name;
         Job = job;
@@ -93,3 +106,4 @@ public class Character
         Gold = gold;
     }
 }
+
