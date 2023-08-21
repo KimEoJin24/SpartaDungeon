@@ -1,0 +1,14 @@
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\bin\Debug\net6.0\SpartaDungeon.exe
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\bin\Debug\net6.0\SpartaDungeon.deps.json
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\bin\Debug\net6.0\SpartaDungeon.runtimeconfig.json
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\bin\Debug\net6.0\SpartaDungeon.dll
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\bin\Debug\net6.0\SpartaDungeon.pdb
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\SpartaDungeon.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\SpartaDungeon.AssemblyInfoInputs.cache
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\SpartaDungeon.AssemblyInfo.cs
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\SpartaDungeon.csproj.CoreCompileInputs.cache
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\SpartaDungeon.dll
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\refint\SpartaDungeon.dll
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\SpartaDungeon.pdb
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\SpartaDungeon.genruntimeconfig.cache
+D:\git\SpartaDungeon\SpartaDungeon\SpartaDungeon\obj\Debug\net6.0\ref\SpartaDungeon.dll
