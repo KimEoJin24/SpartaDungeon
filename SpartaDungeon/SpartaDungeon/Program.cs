@@ -139,8 +139,8 @@ internal class Program
         Console.WriteLine("보유 중인 아이템을 관리할 수 있습니다.");
         Console.WriteLine();
         Console.WriteLine("[아이템 목록]");
-        
-        
+
+
         for (int i = 0; i < inventory.Length; i++)
         {
             if (inventory[i] == null)
@@ -172,7 +172,7 @@ internal class Program
         {
             InventoryDisplay();
         }
-        else if(input > 0 && input < inventory.Length)
+        else if (input > 0 && input < inventory.Length)
         {
             Item item = inventory[input - 1];
             if (item.isEquiped)
@@ -186,6 +186,8 @@ internal class Program
             EquipInventoryDisplay();
         }
     }
+
+
 }
 
 class Character
