@@ -76,6 +76,16 @@ internal class Program
         }
     }
 
+    static void EquipItem(Item item)
+    {
+        item.isEquiped = true;
+    }
+
+    static void UnEquipItem(Item item)
+    {
+        item.isEquiped = false;
+    }
+
     static void InventoryDisplay()
     {
         Console.Clear();
@@ -129,6 +139,8 @@ internal class Program
         Console.WriteLine("보유 중인 아이템을 관리할 수 있습니다.");
         Console.WriteLine();
         Console.WriteLine("[아이템 목록]");
+        
+        
         for (int i = 0; i < inventory.Length; i++)
         {
             if (inventory[i] == null)
@@ -136,6 +148,10 @@ internal class Program
                 break;
             }
             Console.Write(" - " + (i + 1));
+            if (inventory[i].isEquiped)
+            {
+                Console.Write("[E]");
+            }
             if (inventory[i].Atk == 0)
             {
                 Console.WriteLine($" {inventory[i].Name}    | 방어력 +{inventory[i].Def} | {inventory[i].Info}");
@@ -156,9 +172,18 @@ internal class Program
         {
             InventoryDisplay();
         }
-        else
+        else if(input > 0 && input < inventory.Length)
         {
-            Console.WriteLine("1 혹은 2를 입력해주세요.");
+            Item item = inventory[input - 1];
+            if (item.isEquiped)
+            {
+                UnEquipItem(item); // 장착이 되어 있다면
+            }
+            else
+            {
+                EquipItem(item); // 장착이 되지 않았다면
+            }
+            EquipInventoryDisplay();
         }
     }
 }
@@ -192,11 +217,15 @@ class Item
     public int Def;
     public string Info;
 
+    public bool isEquiped;
+
     public Item(string name, int atk, int def, string info)
     {
         Name = name;
         Atk = atk;
         Def = def;
         Info = info;
+
+        isEquiped = false;
     }
 }
