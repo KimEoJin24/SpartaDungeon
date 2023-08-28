@@ -46,7 +46,7 @@ internal class Program
 
         Console.WriteLine("캐릭터의 정보가 표시됩니다.");
         Console.WriteLine();
-        Console.WriteLine("Lv. 01");
+        Console.WriteLine($"Lv. {player.Level}");
         Console.WriteLine("Chad ( 전사 )");
         Console.WriteLine("공격력 : 10");
         Console.WriteLine("방어력 : 5");
